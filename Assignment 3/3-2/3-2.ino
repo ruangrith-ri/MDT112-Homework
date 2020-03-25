@@ -31,7 +31,13 @@ void loop()
     digitalWrite(9,0);
     digitalWrite(8,0);
     delay(500);
-    
+    digitalWrite(7,1);
+    digitalWrite(6,1);
+    digitalWrite(5,1);
+    digitalWrite(4,1);
+    digitalWrite(3,1);
+    digitalWrite(2,1);
+    delay(500);
     digitalWrite(7,0);
     digitalWrite(6,0);
     digitalWrite(5,0);
@@ -39,6 +45,5 @@ void loop()
     digitalWrite(3,0);
     digitalWrite(2,0);
     delay(500);
-    
     
 }
