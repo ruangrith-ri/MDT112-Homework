@@ -1,5 +1,5 @@
 void setup(){
-pinMode(2, INPUT_PULLUP);
+pinMode(2, OUTPUT);
 pinMode(3, OUTPUT);
 pinMode(4, OUTPUT);
 pinMode(5, OUTPUT);
@@ -13,22 +13,12 @@ pinMode(12, OUTPUT);
 pinMode(13, OUTPUT);
 Serial.begin(9600);
 }
-int x = 1;
+
 void loop(){
-    if (digitalRead(2) == 1){
-    digitalWrite(3,0);
-    digitalWrite(4,0);
-    digitalWrite(5,0);
-    digitalWrite(6,0);
-    digitalWrite(7,0);
-    digitalWrite(8,0);
-    digitalWrite(9,0);
-    digitalWrite(10,0);
-    digitalWrite(11,0);
-    digitalWrite(12,0);
-    digitalWrite(13,0);
-  if (digitalRead(2) == 0){
-      digitalWrite(3,1);
+for (int x =0 ;x<=100 ;x++ )
+  int i = x*10;
+ digitalWrite(2,1);
+ digitalWrite(3,1);
 digitalWrite(4,1);
 digitalWrite(5,1);
 digitalWrite(6,1);
@@ -39,9 +29,6 @@ digitalWrite(10,1);
 digitalWrite(11,1);
 digitalWrite(12,1);
 digitalWrite(13,1);
-      Serial.println(x);
-      x++; 
-  }
-  }
+delay(10);
 
 }
