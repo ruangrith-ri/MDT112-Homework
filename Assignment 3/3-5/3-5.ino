@@ -43,10 +43,10 @@ void loop(){
         digitalWrite(12, 0);
         digitalWrite(13, 0);
 
-        if (digitalRead(2) == 0){
-            count++;
-            Serial.println(count); 
-        }
+    if (digitalRead(2) == 0){
+        count++;
+        Serial.println(count); 
+    }
     }
 }
 
