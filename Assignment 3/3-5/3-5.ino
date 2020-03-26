@@ -40,7 +40,7 @@ digitalWrite(11,1);
 digitalWrite(12,1);
 digitalWrite(13,1);
       Serial.println(x);
-      x++; 
+      x++;
   }
   }
 
