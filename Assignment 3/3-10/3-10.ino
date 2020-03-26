@@ -6,7 +6,6 @@ void setup(){
     pinMode(9,OUTPUT);
     pinMode(10,OUTPUT);
     pinMode(11,OUTPUT);
-    Serial.begin(9600);
 }
 
 void loop(){
@@ -64,7 +63,6 @@ void loop(){
         analogWrite(11,x);
         
         if (digitalRead(2)==0){
-            Serial.println("loop11");
             delay(1000);
             break;
         }
@@ -110,7 +108,6 @@ void loop(){
         analogWrite(11,x);
         delay(10);
         if (digitalRead(2)==0){
-            Serial.println("loop11");
             delay(1000);
             break;
         }
