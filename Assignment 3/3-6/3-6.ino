@@ -24,14 +24,14 @@ void setup(){
 int y = 0;
 
 void loop(){
-    int time = 2,x = 0;
+    int time = 2,x = 0,z=0;
     while (digitalRead(2)==0) {
     x++;
     delay(50);
 
     if (x <= 1){
         y++;
-        for (int z = 0; z < 5; z++) {
+        for (z = 0; z < 5; z++) {
         switch (y) {
 
         case 1:
