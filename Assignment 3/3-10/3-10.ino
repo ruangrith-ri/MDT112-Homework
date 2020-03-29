@@ -44,7 +44,7 @@ void loop(){
                 if (digitalRead(2)==0){
                     count++;
                 }
-            else{
+                else{
                 if (count>1){
                     count = 2;
                     Serial.println(count);
