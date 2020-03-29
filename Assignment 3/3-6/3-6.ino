@@ -24,7 +24,7 @@ void setup(){
 int y = 0;
 
 void loop(){
-    int time = 2,x = 0,z=0;
+    int x = 0,z=0;
     while (digitalRead(2)==0) {
     x++;
     delay(50);
