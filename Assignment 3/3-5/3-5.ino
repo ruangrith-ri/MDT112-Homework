@@ -16,9 +16,10 @@
   Serial.begin(9600);  
 }
 
-int x = 1;
 void loop()
 {
+    
+int x = 1;
   if(digitalRead(2) == 1) 
 
     { 
@@ -33,6 +34,7 @@ void loop()
      digitalWrite(11,0);
      digitalWrite(12,0);
      digitalWrite(13,0);
+
       if(digitalRead(2) == 0) 
     {
       digitalWrite(3,1);
@@ -49,10 +51,10 @@ void loop()
     
       Serial.println(x);
       x++;
-
+      
     }
 
   
     }
 }
-    
+   

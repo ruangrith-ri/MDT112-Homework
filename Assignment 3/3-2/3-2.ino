@@ -1,4 +1,4 @@
-void setup()
+/*void setup()
 {
      pinMode(2,OUTPUT);
     pinMode(3,OUTPUT);
@@ -12,8 +12,8 @@ void setup()
     pinMode(11,OUTPUT);
     pinMode(12,OUTPUT);
     pinMode(13,OUTPUT);
-}
-void loop()
+}*/
+/* void loop()
 {
   digitalWrite(2,0);
   digitalWrite(3,0);
@@ -43,4 +43,4 @@ void loop()
   digitalWrite(13,0);
   delay(500);
 
-}
+}*/

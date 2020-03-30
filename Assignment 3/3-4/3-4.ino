@@ -1,4 +1,4 @@
-void setup()
+/* void setup()
 {  
     pinMode(2,OUTPUT);
     pinMode(3,OUTPUT);
@@ -51,4 +51,4 @@ void loop()
   digitalWrite(12,0);
   digitalWrite(13,1);
   delay(250);
-}
+}*/
