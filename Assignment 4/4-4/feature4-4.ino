@@ -4,11 +4,11 @@ String examPassChack(int yourScore, int fullScore) {
   if (yourScore >= full) {
     
     result = "your are " +String(yourScore) + "point form " + String(fullScore) +
-             "point in last exam.\n Pass exam Congratulations. ";
+             "point in last exam.\nPass exam Congratulations. ";
   }
   if (yourScore < full) {
           result = "your are " +String(yourScore) + "point form " + String(fullScore) +
-             "point in last exam.\n Fail exam Attempt again. ";
+             "point in last exam.\nFail exam Attempt again. ";
   }
 
   return result;
