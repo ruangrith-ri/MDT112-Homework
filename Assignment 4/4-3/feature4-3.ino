@@ -1,6 +1,6 @@
 String numberToText(int age) {
   String result;
-  
+
     if (age = 1) {result = "one";}
     else if (age == 2) {result = "two";}
     else if (age == 3) {result = "three";}
