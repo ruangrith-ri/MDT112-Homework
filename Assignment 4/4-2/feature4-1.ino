@@ -1,12 +1,12 @@
 String yourAreYoung(int age) 
  {
-  String result;
+  String result,result1;
     
-  Serial.println(" I'm "+String(age)+" year old.");
+  result =(" I'm "+String(age)+" year old.");
   if (age <18) 
   {
-      Serial.println("Your are young.");
+      result1=("\nYour are young.");
   }
 
-  return result;
+  return result+result1;
 }
