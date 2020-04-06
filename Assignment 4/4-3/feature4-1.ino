@@ -9,7 +9,7 @@ String yourAreYoung(int age, String ageString) {
    result = "I'm " + numberToText(age) + " year old";
   if(age<18)
   {
-      result = "I'm " + numberToText(age) + " year old\nYour are young.";
+      result =  "\n year old\nYour are young.";
   }
 
   return result;
