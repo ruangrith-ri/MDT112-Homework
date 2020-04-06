@@ -4,12 +4,12 @@ String multiplication(int multiple){
   for(int i=1 ;i <= 12 ;i++){
     calculation = i*multiple;
   if(i>=12){
-    sum = String(multiple)+"\r*\r" +String(i)+
-    "\r=\r"+String(calculation)+"\n";
+    sum = "\t" + String(multiple)+   "\t*\t"  +String(i)+
+    "\t=\t"  +String(calculation)+  "\n" ;
   }
    else{
-    sum = String(multiple)+"\r*\r" +String(i)+
-    "\r=\r"+String(calculation)+"\n";
+    sum = "\t"+ String(multiple)+   "\t*\t"   +String(i)+
+    "\t=\t"  +String(calculation)+  "\n"  ;
   
    }
    sum2 = sum2+sum;
