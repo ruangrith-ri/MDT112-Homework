@@ -3,7 +3,7 @@ String yourAreYoung(int age) {
 result = "I am"+ String(age)+"year old";
 if(age<18)
 {
-    result = "I am"+String(age)+"year old""your are yong";
+    result = "your are yong";
 }
 
 
