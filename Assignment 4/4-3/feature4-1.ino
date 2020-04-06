@@ -4,13 +4,14 @@ String yourAreYoung(int age) {
   return result;
 }
 
-String yourAreYoung(int age, String numberToText) {
+String yourAreYoung(int age, String numberString) {
   String result;
+  result = "i'm" + String(numberString) + "year old";
     if (age > 0 && age <= 18) {
-        result = "i'm" + String(numberToText) + "year old\n" "Your are young.";
+        result = "i'm" + String(numberString) + "year old\n" "Your are young.";
     }
     else {
-        result = "i'm" + String(numberToText) + "year old";
+        result = "i'm" + String(numberString) + "year old";
     }
   return result;
 }

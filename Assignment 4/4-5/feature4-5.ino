@@ -1,6 +1,6 @@
 String gradeChack(int yourScore) {
     String result;
-    result = "Your are " + String(yourScore) + " point from 100 point in Computer Programming Subject.";
+    
     if (yourScore>=85 && yourScore<=100){
         result = "Your are " + String(yourScore) + " point from 100 point in Computer Programming Subject.\n" "You get grade A.";
     }
