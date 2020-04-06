@@ -7,10 +7,11 @@ String primeNumber(int maxNumber) {
               prim = false;
               break;
           }
+          
       }
       if(prim)
       
-      result = result + "\t" +String(i); 
+      result = result + String(i); 
       
 
   }

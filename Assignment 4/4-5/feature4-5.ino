@@ -24,11 +24,11 @@ String gradeChack(int yourScore) {
     result = "Your are " + String(yourScore) +
              "point form in Computer Programming Subject.\n You get grade D+ .";
   }
-  if (yourScore >= 59 && yourScore <= 55) {
+  if (yourScore <= 59 && yourScore >= 55) {
     result = "Your are " + String(yourScore) +
              "point form in Computer Programming Subject.\n You get grade D .";
   }
-  if (yourScore >= 54 && yourScore <= 0) {
+  if (yourScore <= 54 && yourScore >= 0) {
     result = "Your are " + String(yourScore) +
              "point form in Computer Programming Subject.\n You get grade F .\n See you aging next semeject.";
   }
