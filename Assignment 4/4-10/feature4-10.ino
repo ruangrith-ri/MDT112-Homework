@@ -11,7 +11,7 @@ String primeNumber(int maxNumber)
          
         result =result+(" "+String (i)+ " "); 
      
-         result =result+("\n");
+         result =result+("\n ");
         
      }
     
