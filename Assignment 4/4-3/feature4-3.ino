@@ -40,5 +40,67 @@ String numberToText(int age) {
    }
    if(age == 20){result = "twenty";
    }
+    if(age == 21){result = "twenty-one";
+   }
+   if(age == 22){result = "twenty-two";
+   }
+   if(age == 23){result = "twenty-three";
+   }
+   if(age == 24){result = "twenty-four";
+   }
+   if(age == 25){result = "twenty-five";
+   }
+   if(age == 26){result = "twenty-six";
+   }
+   if(age == 27){result = "twenty-seven";
+   }
+   if(age == 28){result = "twenty-eight";
+   }
+   if(age == 29){result = "twenty-nine";
+   }
+   if(age == 30){result = "thirty";
+   }
+   if(age == 31){result = "thirty-one";
+   }
+   if(age == 32){result = "thirty-two";
+   }
+   if(age == 33){result = "thirty-three";
+   }
+   if(age == 34){result = "thirty-four";
+   }
+   if(age == 35){result = "thirty-five";
+   }
+   if(age == 36){result = "thirty-six";
+   }
+   if(age == 37){result = "thirty-seven";
+   }
+   if(age == 38){result = "thirty-eight";
+   }
+   if(age == 39){result = "thirty-nine";
+   }
+
+    if(age == 40){result = "fourty";
+   }
+   if(age == 41){result = "fourty-one";
+   }
+   if(age == 42){result = "fourty-two";
+   }
+   if(age == 43){result = "fourty-three";
+   }
+   if(age == 44){result = "fourty-four";
+   }
+   if(age == 45){result = "fourty-five";
+   }
+   if(age == 46){result = "fourty-six";
+   }
+   if(age == 47){result = "fourty-seven";
+   }
+   if(age == 48){result = "fourty-eight";
+   }
+   if(age == 49){result = "fourty-nine";
+   }
+
+    if(age == 50){result = "fifty";
+    }
   return result;
 }
