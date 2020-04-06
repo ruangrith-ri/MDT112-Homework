@@ -1,6 +1,5 @@
 String primeNumber(int maxNumber) {
     int check = 0;
-    char key_space = ' ';
     String result;
 
     for (int i = 2; i <= maxNumber; i++) {
