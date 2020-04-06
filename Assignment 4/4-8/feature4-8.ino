@@ -1,4 +1,5 @@
-String multiplicationTable(int multiple) {
+String multiplicationTable(int multiple)
+{
   String result, result,result1,result2,result3,result4,result5,result6,result7,result8,result9,result10,result11,result12,result13,result14,result15;
    int I =multiple*1;
     int II=multiple*2;
