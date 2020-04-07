@@ -1,21 +1,29 @@
 String primeNumber(int maxNumber) {
-  String result;
-  int count;
-  for (int i=1; i<=5; i++) {
-  
-        {
-            
-         
-            if((i==1 || i%2 == 0 || i%3 == 0 || i%5==0 || i%7==0) 
-                && (i!=2 && i!=3 && i!=5 && i!=7)){
-                result = result + String (i) ;
-                continue;        
-            }
-            "\t";     
-        }   
-        
-    "\n";
+    int count = 0;
+    String result;
 
-  }
-  return result;
+    for (int i = 2; i <= maxNumber; i++) {
+        bool prime = true;
+        for (int j =2 ;j*j <= i ; j++) {
+            if(i % j == 0){
+                prime = false;
+                break;
+            }
+
+        }
+        if(prime == true) {
+            result = result + String(i);
+
+            count = count + 1;
+
+            result += String("\t");
+        }
+
+        if(count == 5) {
+              result = result + "\n";
+
+              count = 0;
+          }
+    }
+    return result;
 }
