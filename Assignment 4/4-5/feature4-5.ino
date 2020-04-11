@@ -29,7 +29,7 @@ String gradeChack(int yourScore) {
     }
 
     else if(yourScore >= 85 && yourScore <= 100){
-        result = "Your are" +String(yourScore)+" point from 100 point in Computer Programming Subject.\nYou get grade C+. See you again next semester.";
+        result = "Your are" +String(yourScore)+" point from 100 point in Computer Programming Subject.\nYou get grade A. See you again next semester.";
     }
 
 
