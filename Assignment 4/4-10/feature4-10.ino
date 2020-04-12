@@ -1,5 +1,5 @@
 String primeNumber(int maxNumber) {
-  long String result = "2\t";
+  String result = "2\t";
   int count = 1;
   for(int i = 3; i <= maxNumber; i++) {
     bool check = true;
