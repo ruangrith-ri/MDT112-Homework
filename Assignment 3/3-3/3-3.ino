@@ -1,3 +1,6 @@
+long lasttime = 0;
+String state = "2";
+
 void setup() {
      pinMode(1, OUTPUT);
      pinMode(2, OUTPUT);
@@ -14,28 +17,109 @@ void setup() {
      pinMode(13, OUTPUT);
 }
 void loop(){
-     digitalWrite(2,1);
-     delay(250);
-     digitalWrite(3,1);
-     delay(250);
-     digitalWrite(4,1);
-     delay(250);
-     digitalWrite(5,1);
-     delay(250);
-     digitalWrite(6,1);
-     delay(250);
-     digitalWrite(7,1);
-     delay(250);
-     digitalWrite(8,1);
-     delay(250);
-     digitalWrite(9,1);
-     delay(250);
-     digitalWrite(10,1);
-     delay(250);
-     digitalWrite(11,1);
-     delay(250);
-     digitalWrite(12,1);
-     delay(250);
-     digitalWrite(13,1);
-     delay(250);
+    long currenttime = millis();
+    
+    if(state == "2"){
+        digitalWrite(2,1);
+        if (currenttime - lasttime >= 250){
+            state = "3";
+            lasttime = currenttime;
+        }
+    }
+     if(state == "3"){
+        digitalWrite(3,1);
+        if (currenttime - lasttime >= 250){
+            state = "4";
+            lasttime = currenttime;
+        }
+    }
+     if(state == "4"){
+        digitalWrite(4,1);
+        if (currenttime - lasttime >= 250){
+            state = "5";
+            lasttime = currenttime;
+        }
+    }
+     if(state == "5"){
+        digitalWrite(5,1);
+        if (currenttime - lasttime >= 250){
+            state = "6";
+            lasttime = currenttime;
+        }
+    }
+     if(state == "6"){
+        digitalWrite(6,1);
+        if (currenttime - lasttime >= 250){
+            state = "7";
+            lasttime = currenttime;
+        }
+    }
+     if(state == "7"){
+        digitalWrite(7,1);
+        if (currenttime - lasttime >= 250){
+            state = "8";
+            lasttime = currenttime;
+        }
+    }
+     if(state == "8"){
+        digitalWrite(8,1);
+        if (currenttime - lasttime >= 250){
+            state = "9";
+            lasttime = currenttime;
+        }
+    }
+     if(state == "9"){
+        digitalWrite(9,1);
+        if (currenttime - lasttime >= 250){
+            state = "10";
+            lasttime = currenttime;
+        }
+    }
+     if(state == "10"){
+        digitalWrite(10,1);
+        if (currenttime - lasttime >= 250){
+            state = "11";
+            lasttime = currenttime;
+        }
+    }
+     if(state == "11"){
+        digitalWrite(11,1);
+        if (currenttime - lasttime >= 250){
+            state = "12";
+            lasttime = currenttime;
+        }
+    }
+     if(state == "12"){
+        digitalWrite(12,1);
+        if (currenttime - lasttime >= 250){
+            state = "13";
+            lasttime = currenttime;
+        }
+    }
+     if(state == "13"){
+        digitalWrite(13,1);
+        if (currenttime - lasttime >= 250){
+            state = "off";
+            lasttime = currenttime;
+        }
+    }
+    else if (state == "off") {
+     digitalWrite(2, 0);
+     digitalWrite(3, 0);
+     digitalWrite(4, 0);
+     digitalWrite(5, 0);
+     digitalWrite(6, 0);
+     digitalWrite(7, 0);
+     digitalWrite(8, 0);
+     digitalWrite(9, 0);
+     digitalWrite(10, 0);
+     digitalWrite(11, 0);
+     digitalWrite(12, 0);
+     digitalWrite(13, 0);
+     if (currenttime - lasttime >= 250) {
+     state = "2";
+     lasttime = currenttime;
+      }
+    }
+     
 }

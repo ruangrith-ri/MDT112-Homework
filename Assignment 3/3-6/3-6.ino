@@ -1,3 +1,6 @@
+long lastTime = 0;
+String state = "on";
+
 void setup() {
     Serial.begin(9600);
      pinMode(3, OUTPUT);
@@ -21,6 +24,7 @@ void setup() {
 }
 int count = 0;
 void loop() {
+    long currentTime = millis();
     if (digitalRead(2) == 0)  {
     switch (count) {
     case 1: 
@@ -32,20 +36,30 @@ void loop() {
       digitalWrite(13, 1);
       break;
        case 2:
+    if (state == "off"){
       digitalWrite(8, 1);
       digitalWrite(9, 1);
       digitalWrite(10, 1);
       digitalWrite(11, 1);
       digitalWrite(12, 1);
       digitalWrite(13, 1);
-      delay(100);
+        if (currentTime - lastTime >= 100) {
+     state = "on";
+     lastTime =currentTime;
+     }
+}
+    if (state == "off"){
       digitalWrite(8, 0);
       digitalWrite(9, 0);
       digitalWrite(10, 0);
       digitalWrite(11, 0);
       digitalWrite(12, 0);
       digitalWrite(13, 0);
-      delay(100);
+        if (currentTime - lastTime >= 100) {
+     state = "on";
+     lastTime =currentTime;
+     }
+}
       break;
     case 3:
       digitalWrite(8, 0);
@@ -70,20 +84,30 @@ void loop() {
       digitalWrite(13, 1);
       break;
     case 2:
+    if (state == "on"){
       digitalWrite(8, 1);
       digitalWrite(9, 1);
       digitalWrite(10, 1);
       digitalWrite(11, 1);
       digitalWrite(12, 1);
       digitalWrite(13, 1);
-      delay(100);
+      if (currentTime - lastTime >= 100) {
+     state = "off";
+     lastTime =currentTime;
+     }
+}
+    if (state == "off"){
       digitalWrite(8, 0);
       digitalWrite(9, 0);
       digitalWrite(10, 0);
       digitalWrite(11, 0);
       digitalWrite(12, 0);
       digitalWrite(13, 0);
-      delay(100);
+      if (currentTime - lastTime >= 100) {
+     state = "on";
+     lastTime =currentTime;
+     }
+}
       break;
     case 3:
       digitalWrite(8, 0);
