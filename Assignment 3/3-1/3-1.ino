@@ -1,3 +1,5 @@
+long lastTimeStateChange = 0;
+String state = "ON";
 void setup(){
     pinMode(2, OUTPUT);
     pinMode(3, OUTPUT);
@@ -13,6 +15,16 @@ void setup(){
     pinMode(13, OUTPUT);
 }
 void loop(){
+    long currentTime = millis();
+    if(state == "ON" && currentTime - lastTimeStateChange >= 500){         
+            state = "OFF";
+            lastTimeStateChange = currentTime;            
+        }
+    else if (state == "OFF" && currentTime - lastTimeStateChange >= 500){
+            state = "ON";
+            lastTimeStateChange = currentTime;
+    }
+    if (state == "ON"){
     digitalWrite(2, 1);
     digitalWrite(3, 1);
     digitalWrite(4, 1);
@@ -25,8 +37,10 @@ void loop(){
     digitalWrite(11, 1);
     digitalWrite(12, 1);
     digitalWrite(13, 1);
-    delay(500);
-
+    }
+    
+    else if (state == "OFF") 
+    {
     digitalWrite(2, 0);
     digitalWrite(3, 0);
     digitalWrite(4, 0);
@@ -39,5 +53,6 @@ void loop(){
     digitalWrite(11, 0);
     digitalWrite(12, 0);
     digitalWrite(13, 0);
-    delay(500);
+    }
+    
 }
