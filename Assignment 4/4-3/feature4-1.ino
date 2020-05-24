@@ -6,7 +6,7 @@ String yourAreYoung(int age) {
 String yourAreYoung(int age, String ageString) {
   String result,result1;
     
-  result =(" I'm "+numberToText(age)+" year old.");
+  result =(" I'm "+String(numberToText(age))+" year old.");
   if (age <18) 
   {
       result1=("\nYour are young.");
