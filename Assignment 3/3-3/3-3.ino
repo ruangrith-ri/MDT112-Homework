@@ -21,16 +21,22 @@ void loop(){
     int x=0;
     long currentTime = millis();
     for(x=0;x<=13;x++){
-
-        
         if(state == "ON"){
-        digitalWrite(x,1);
+            digitalWrite(x,1);
             if(currentTime - lasttimeStageChange >= 250){
             state = "OFF";
+            
             lasttimeStageChange = currentTime;
+            }
         }
+        else if(state == "OFF"){
+        
+            if(currentTime - lasttimeStageChange >= 250){
+                state = "ON";
+                lasttimeStageChange = currentTime;
+            }   
+        }   
     }
-    
 }
 /*void setup(){
     pinMode(2,OUTPUT);
